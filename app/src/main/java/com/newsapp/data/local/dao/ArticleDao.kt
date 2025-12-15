@@ -16,7 +16,7 @@ interface ArticleDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertArticles(entities: List<ArticleEntity>)
 
-    @Query("SELECT * FROM articlxes WHERE url = :url")
+    @Query("SELECT * FROM articles WHERE url = :url")
     suspend fun getArticleByUrl(url: String): ArticleEntity?
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
