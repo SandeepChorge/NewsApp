@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Base theme for the app.
+        Since we're using Jetpack Compose with Material 3,
+        this is a minimal theme that sets up the app properly.
+
+        All Material 3 theming is done in Theme.kt (Compose)
+    -->
+
+    <style name="Theme.NewsApp" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="android:colorPrimary">@color/primary_light</item>
+        <item name="android:colorPrimaryDark">@color/status_bar_light</item>
+        <item name="android:colorAccent">@color/secondary_light</item>
+
+        <!-- Background color -->
+        <item name="android:windowBackground">@color/background_light</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/status_bar_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/surface_light</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Enable edge-to-edge -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+</resources>
